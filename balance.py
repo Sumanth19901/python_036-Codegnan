@@ -1,8 +1,12 @@
-amount=int(input)
-def  chek_balance():
+def  check_balance():
+    global Balance
+    print(f"Your current balance is: {Balance}")
 
-def  balance():
-    
+def  Deposite(money):
+    global Balance
+    Balance += money
+    print(f"amount {money} succefully credited")
+    print(f"Your current balance is: {Balance}")
 
 def  account_details()
 
