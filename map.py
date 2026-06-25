@@ -1,3 +1,35 @@
-data = [10, 20, 30, 40]
-for i in range(1, len(data) - 1):  # Starts at 1, stops before the last
-    print(data[i-1], data[i], data[i+1])  # Looks at neighbors
+# #map
+# def str(s):
+#     x=""
+#     for i in s:
+#         x=i.upper()+x
+#     return x
+# 
+# print(str("mapping"))
+# print(list(map(str,"mapping")))
+
+
+# def Len(l):
+#     x=[]
+#     for i in l:
+#         x.append(len(i))
+#     return x
+# 
+# l=["tcs","wipro","capgimini","zoho"]
+# print(Len(l))
+# print(list(map(lambda )))
+
+
+def Cap(l):
+    x=[]
+    for i in l:
+       x.append(i[0].upper()+i[1:])
+    return x
+
+l=["tcs","wipro","capgimini","zoho"]
+print(Cap(l))
+print(tuple(map((lambda x:x.capitalize()),l)))
+result=filter((lambda x:x.startswith("t")),l)
+print(list(result))
+
+from functools import reduce
